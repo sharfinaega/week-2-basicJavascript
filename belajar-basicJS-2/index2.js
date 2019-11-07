@@ -36,3 +36,24 @@ for (
   }
 }
 alert("YES!! You're right!!");
+
+// 3.
+const user = prompt("Who's there?");
+
+if (user == "cancel") {
+  alert("canceled");
+} else if (user == "other") {
+  alert("I dont know you");
+} else if (user == "admin") {
+  const password = prompt("Password?");
+
+  if (password == "cancel") {
+    alert("Canceled");
+  } else if (password == "other") {
+    alert("Wrong password");
+  } else if (password == "TheMaster") {
+    alert("Welcome");
+  }
+} else {
+  alert("apakah anda alien?");
+}
